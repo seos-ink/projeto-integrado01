@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "futura md bt";
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  background: dodgerblue;
+  background-position: bottom;
+}
+header {
+  background: #000;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+header .logo {
+  color: #fff;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+header nav ul {
+  display: flex;
+}
+header nav ul li a {
+  display: inline-block;
+  color: #fff;
+  padding: 5px 0;
+  margin: 0 10px;
+  border: 3px solid transparent;
+  text-transform: uppercase;
+  transition: 0.2s;
+  text-decoration: none;
+}
+header nav ul li a:hover {
+  border-bottom-color: rgb(30, 144, 255);
+}
+
+.navnav {
+  cursor: pointer;
+  display: none;
+}
+.navnav div {
+  width: 30px;
+  height: 3px;
+  margin: 5px 0;
+  background: #fff;
+}
+@media only screen and (max-width: 900px) {
+  header {
+    padding: 0 30px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .navnav {
+    display: block;
+  }
+  .logo {
+    display: flex;
+  }
+  .logo .navnav {
+    margin-top: 10px;
+    justify-content: flex-start;
+    margin-left: 10px;
+    justify-items: flex-start;
+  }
+  header nav {
+    position: absolute;
+    width: 100%;
+    left: -100%;
+    top: 70px;
+    width: 100%;
+    background: #000;
+    padding: 30px;
+    transition: 0.3s;
+  }
+  header nav ul .Cadastro {
+    background-color: #000;
+  }
+  header #nav_check:checked ~ nav {
+    left: 0;
+  }
+  header nav ul {
+    display: block;
+  }
+  header nav ul li a {
+    margin: 5px 0;
+  }
+}
+
+.logo img {
+  width: 35px;
+  margin-left: 5px;
+}
+form {
+  border: 3px solid black;
+  text-shadow: 2 2 2 #000 -2 -2 -2 black;
+}
+li .Cadastro {
+  background-color: black;
+  border-radius: 25px;
+}
+.Cadastro a {
+  background-color: blue;
+  border-radius: 25px;
+  padding: 5px;
+  padding-bottom: 3px;
+}
+/*
+Cadastro
+*/
+
+.formulario {
+  min-height: 100vh;
+  background: rgb(29, 29, 105);
+  font-family: sans-serif;
+  display: grid;
+  place-items: center;
+}
+p {
+  font-size: 1.3125rem;
+  color: #222;
+  margin-bottom: 5rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 28rem;
+  background: #fff;
+  padding: 4rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 1.8rem rgba(0, 0, 0, 0.15);
+}
+label {
+  width: 100%;
+  color: #777;
+  align-self: flex-start;
+  transition: 0.15s linear;
+}
+label:focus-within {
+  color: rgb(39, 39, 159);
+}
+input {
+  font-size: 1.1875rem;
+  color: #404040;
+  padding: 1rem 0 0.5rem 0;
+  width: 100%;
+  border: none;
+  border-color: #a0a0a0;
+  border-bottom-width: 1px;
+  border-bottom-style: dotted;
+  margin-bottom: 3rem;
+  transition: 0.15s linear;
+}
+input:focus {
+  outline: none;
+  border-color: rgb(18, 18, 76);
+}
+button {
+  font-size: 0.8125rem;
+  line-height: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  background: transparent;
+  color: rgb(39, 39, 159);
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+  transition: 0.25s;
+}
+button:hover,
+button:focus {
+  outline: none;
+  background-color: rgb(18, 18, 76);
+  color: #fff;
+}
+form a {
+  text-decoration: none;
+  color: rgb(18, 18, 76);
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: 0.3s;
+}
+a:hover,
+a:focus {
+  outline: none;
+}
+a:first-of-type {
+  margin-top: 3rem;
+}
+a + a {
+  margin-top: 1.125rem;
+}
+
+/*Background Image*/
+.background {
+  min-height: 80vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url(../img/Schoolbackground.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+.background h1 {
+  font-size: 60px;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px green, -2px -2px 2px green;
+  color: white;
+}
