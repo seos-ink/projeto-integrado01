@@ -1,0 +1,25 @@
+.carouselExampleCaptions {
+  max-height: 100px;
+}
+body {
+  background-color: black;
+  color: white;
+}
+.rodapé {
+  background-color: black;
+  color: white;
+}
+footer {
+  border-top: 1.5px solid #dea62c;
+  background-color: black;
+}
+.card {
+  margin-top: 25px;
+  min-height: 589.5px;
+  max-height: 590px;
+  border: 2px solid #dea62c;
+  background-color: #dea62c;
+}
+.card:hover {
+  border: 2px solid #dea62c;
+}

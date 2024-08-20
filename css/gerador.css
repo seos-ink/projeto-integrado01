@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+.cardescolha {
+  border: 2.5px solid black;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.conteudo {
+  padding: 15px;
+}
+
+.ArastArquivo {
+  margin-top: 20px;
+}
+
+.conteudoc {
+  padding: 15px;
+}
+
+.card-group {
+  border: 2.5px solid black;
+  border-radius: 15px;
+}
+
+.drag-area {
+  border: 2px dashed #000000;
+  height: 250px;
+  width: 100%;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.drag-area.active {
+  border: 2px solid #fff;
+}
+
+.drag-area .icon {
+  font-size: 80px;
+  color: #000000;
+}
+
+.drag-area header {
+  font-size: 24px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.drag-area span {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000000;
+  margin: 10px 0 15px 0;
+}
+
+.drag-area button {
+  padding: 8px 20px;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  background: #000000;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.drag-area img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .cardescolha {
+    padding: 10px;
+  }
+
+  .drag-area {
+    height: 200px;
+  }
+
+  .drag-area .icon {
+    font-size: 60px;
+  }
+
+  .drag-area header {
+    font-size: 20px;
+  }
+
+  .drag-area span {
+    font-size: 16px;
+  }
+
+  .drag-area button {
+    font-size: 16px;
+    padding: 6px 18px;
+  }
+}

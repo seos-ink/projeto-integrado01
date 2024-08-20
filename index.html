@@ -1,43 +1,308 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gerador de Simulado - PF</title>
-
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gersim</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="shortcut icon" href="img/gersim(1).ico" type="image/x-icon" />
 </head>
+
 <body>
+  <header class="menu">
+    <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
+      <div class="container-fluid">
 
-    <nav class="navbar bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-            Bootstrap
-          </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="index.html">Menu</a>
+            <a class="nav-link" href="/pages/sobre.html">Sobre</a>
+            <a class="nav-link" href="/pages/quemsomos.html">Quem Somos</a>
+            <a class="nav-link" href="/pages/cadastro.html">Cadastrar</a>
+          </div>
         </div>
-      </nav>
+      </div>
+    </nav>
 
+    <div class="container pagindex">
+      <div class="row align-items-center">
+        <div class="col-md-8 texto" data-aos="fade-right">
+          <h3 class="textograndinho">Bem-vindo ao GerSim</h3>
+          <h1 class="textogrande">Suas provas em apenas alguns passos!</h1>
+        </div>
+        <div class="col-md-4 fundoimagem" data-aos="fade-left">
+          <img src="../img/estud.avif" alt="" class="img-fluid" />
+        </div>
+      </div>
+      <form class="d-flex justify-content-center mt-4" role="search">
+        <div class="botão">
+          <a href="pages/gerador.html" type="button" class="btn btn-primary">Gerar Prova</a>
+        </div>
+      </form>
+    </div>
+  </header>
 
+  <div data-aos="fade-up">
+    <section class="container mt-5">
+      <h2 class="border-bottom pb-2" style="font-size: 2rem; font-weight: 600">
+        Gerador de Simulados on-line
+      </h2>
+      <p>
+        Bem-vindo ao nosso gerador de simulados! Crie testes personalizados de
+        forma rápida e fácil, e também gratuita! Escolha as perguntas, ajuste
+        o nível de dificuldade e pronto! Prepare-se melhor para suas provas e
+        desafios com nossa ferramenta prática e eficiente. Comece agora e veja
+        a diferença!
+      </p>
+    </section>
+  </div>
 
+  <div class="container mt-5">
+    <div class="card-group">
+      <div data-aos="fade-up">
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="img/fazendosimulado.jpg" class="img-fluid rounded-start" alt="Fazendo Simulado" />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5>Bem-vindo ao futuro da educação</h5>
+                <p class="card-text">
+                  Imagine ter o poder de criar simulados que realmente falam a
+                  língua dos seus alunos, ajustados às suas necessidades e
+                  estilos de aprendizado. <br />
+                  Com o Gersim, isso é possível! Transforme a maneira como
+                  você ensina, criando experiências de aprendizado únicas e
+                  cativantes. Escolha os temas, defina a dificuldade, e
+                  assista seus alunos prosperarem. Venha fazer parte dessa
+                  revolução na educação e inspire suas turmas a irem além!
+                </p>
+                <a href="galeria.html" class="btn btn-primary" style="
+                      background-color: rgb(138, 106, 255);
+                      border-color: rgb(138, 106, 255);
+                    ">
+                  Gerar Agora
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <div class="quantipergunt" style="font-weight: 600">
+    <div class="container" style="
+          display: flex;
+          flex-direction: column;
+          min-height: 45vh;
+          min-width: 100%;
+          justify-content: center;
+          align-items: center;
+        ">
+      <div class="novquant" style="border: 2px solid black; padding: 15px; border-radius: 8px">
+        <h2 style="margin-bottom: 60px; text-align: left">
+          Veja a Quantidade de Perguntas Disponiveis
+        </h2>
+        <div class="cardt" style="
+              display: flex;
+              gap: 20px;
+              justify-content: center;
+              border-radius: 5px;
+            ">
+          <div class="card" style="max-height: 100px; border: 1px solid transparent">
+            <ul>
+              <li>
+                Português
+                <span class="number" data-start="1" data-end="500">0</span>
+              </li>
+              <li>
+                Matemática
+                <span class="number" data-start="1" data-end="500">0</span>
+              </li>
+              <li>
+                História
+                <span class="number" data-start="1" data-end="500">0</span>
+              </li>
+              <li>
+                Biologia
+                <span class="number" data-start="1" data-end="500">0</span>
+              </li>
+            </ul>
+          </div>
+          <div class="card" style="max-height: 100px; border: 1px solid transparent">
+            <ul>
+              <li>
+                Artes
+                <span class="number" data-start="1" data-end="500">0</span>
+              </li>
+              <li>
+                Inglês
+                <span class="number" data-start="1" data-end="500">0</span>
+              </li>
+              <li>
+                Química
+                <span class="number" data-start="1" data-end="500">0</span>
+              </li>
+              <li>
+                Física
+                <span class="number" data-start="1" data-end="500">0</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
+      <script>
+        function animateNumber(element, start, end, duration) {
+          let startTime = null;
 
+          function step(timestamp) {
+            if (!startTime) startTime = timestamp;
+            const progress = Math.min((timestamp - startTime) / duration, 1);
+            element.textContent = Math.floor(
+              progress * (end - start) + start
+            );
+            if (progress < 1) {
+              requestAnimationFrame(step);
+            }
+          }
 
+          requestAnimationFrame(step);
+        }
 
+        document.addEventListener("DOMContentLoaded", () => {
+          const numbers = document.querySelectorAll(".number");
+          numbers.forEach((num) => {
+            const start = parseInt(num.getAttribute("data-start"), 10);
+            const end = parseInt(num.getAttribute("data-end"), 10);
+            animateNumber(num, start, end, 3000);
+          });
+        });
+      </script>
+    </div>
+  </div>
 
+  <section class="container mt-5">
+    <h2 class="mb-5 border-bottom pb-2" style="border-bottom: 2px solid #093e32">
+      Mas porque usar Gersim?
+    </h2>
+    <div class="row">
+      <div class="col-md-6 col-lg-6 mb-4">
+        <div class="card h-100">
+          <img src="img/undraw_Teacher_re_sico.png" class="card-img-top" alt="Gere provas a partir de um PDF" />
+          <div class="card-body">
+            <h5 class="card-title">Transforme PDFs em Simulados</h5>
+            <p class="card-text">
+              Transforme PDFs em Simulados Personalizados Com apenas alguns
+              cliques, você pode converter seus PDFs em simulados completos e
+              prontos para serem aplicados.
+            </p>
+          </div>
+        </div>
+      </div>
 
+      <div class="col-md-6 col-lg-6 mb-4">
+        <div class="card h-100">
+          <img src="img/undraw_Studying_re_deca.png" class="card-img-top"
+            alt="Estude também em casa, ou em qualquer lugar!" />
+          <div class="card-body">
+            <h5 class="card-title">Leve o aprendizado com você</h5>
+            <p class="card-text">
+              Não importa onde você esteja, o aprendizado nunca para. Com o
+              Gersim, seus alunos podem acessar simulados personalizados a
+              qualquer hora e em qualquer lugar.
+            </p>
+          </div>
+        </div>
+      </div>
 
+      <div class="col-md-6 col-lg-6 mb-4">
+        <div class="card h-100">
+          <img src="img/undraw_Online_test_re_kyfx.png" class="card-img-top"
+            alt="Receba os resultados no mesmo instante" />
+          <div class="card-body">
+            <h5 class="card-title">Resultados Imediatos!</h5>
+            <p class="card-text">
+              Não espere mais! Com o Gersim, você recebe os resultados dos
+              simulados no momento em que seus alunos terminam.
+            </p>
+          </div>
+        </div>
+      </div>
 
+      <div class="col-md-6 col-lg-6 mb-4">
+        <div class="card h-100">
+          <img src="img/undraw_Certification_re_ifll.png" class="card-img-top"
+            alt="Personalize sua prova, por disciplina e/ou dificuldade" />
+          <div class="card-body">
+            <h5 class="card-title">Crie Provas Diferentes para Cada Aluno</h5>
+            <p class="card-text">
+              Leve a personalização ao próximo nível com o Gersim. Ajuste suas
+              provas com base em disciplinas e níveis de dificuldade para
+              atender às necessidades específicas de cada aluno.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h4>Sobre o Projeto</h4>
+          <p style="color: white">
+            O projeto Gersim, criado por alunos do primeiro ano do Ensino
+            Médio Técnico em Desenvolvimento de Sistemas da ETEC Alfredo de
+            Barros Santos, mostra a criatividade e o potencial dos estudantes
+            na área de tecnologia. Agradecemos a todos pela contribuição.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <h4>Links Rápidos</h4>
+          <ul>
+            <li>
+              <a href="../index.html">Home</a>
+            </li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="quemsomos.html">Quem Somos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h4>Redes Sociais</h4>
+          <div class="social-links">
+            <a href="https://facebook.com" target="_blank" class="social-icon facebook">Facebook</a>
+            <a href="https://twitter.com" target="_blank" class="social-icon twitter">Twitter</a>
+            <a href="https://instagram.com" target="_blank" class="social-icon instagram">Instagram</a>
+            <a href="https://linkedin.com" target="_blank" class="social-icon linkedin">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-2">
+        <p style="color: white">
+          ©2024 | Projeto desenvolvido por: <strong>Equipe Gersim</strong>
+        </p>
+      </div>
+    </div>
+  </footer>
 
-
-
-
-
-    <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

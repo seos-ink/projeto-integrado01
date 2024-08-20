@@ -1,0 +1,158 @@
+.home {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 25px;
+}
+.home-text {
+  max-width: 37rem;
+}
+.home-text .text-h4 {
+  font-size: 1.5rem;
+  color: rgb(138, 106, 255);
+  margin-bottom: 1rem;
+}
+.home-text .text-h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  line-height: 4rem;
+}
+.home-text p {
+  margin-bottom: 4rem;
+}
+.home-btn {
+  padding: 15px 45px;
+  background-color: rgb(138, 106, 255);
+  color: white;
+  border-radius: 10px;
+  font-weight: 700;
+  transition: all 0.5s;
+}
+.home-btn:hover {
+  background-color: rgb(169, 146, 255);
+}
+.home-img {
+  width: 100%;
+}
+@media (max-widht: 785px) {
+  .home {
+    padding: 100px 2%;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+    gap: 5rem;
+  }
+  .home .text-h4 {
+    font-size: 15px;
+  }
+  .home .text-h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+  .home p {
+    font-size: 15px;
+  }
+  .home-img {
+    width: 125%;
+  }
+}
+
+
+
+.footer {
+  background-color: #f8f9fa;
+  padding: 40px 0;
+  color: #333;
+}
+
+.footer h4 {
+  margin-bottom: 20px;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.footer p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+.footer ul li a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.footer ul li a:hover {
+  text-decoration: underline;
+}
+
+.social-links {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icon {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  font-size: 1.25rem;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.social-icon.facebook {
+  background-color: #3b5998;
+}
+
+.social-icon.twitter {
+  background-color: #1da1f2;
+}
+
+.social-icon.instagram {
+  background-color: #e4405f;
+}
+
+.social-icon.linkedin {
+  background-color: #0077b5;
+}
+
+.social-icon:hover {
+  opacity: 0.8;
+}
+
+
+@media (max-width: 768px) {
+  .footer .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .footer .row {
+    text-align: center;
+  }
+
+  .footer .col-md-4 {
+    margin-bottom: 20px;
+  }
+
+  .social-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-icon {
+    margin-bot
+  }
+}

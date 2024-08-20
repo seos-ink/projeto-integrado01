@@ -1,0 +1,115 @@
+.dropdown-item:hover {
+  border-bottom: 2.5px solid rgb(0, 0, 0);
+  transition: 0.75s;
+}
+
+.nav-link:hover {
+  border-bottom: 2.5px solid rgb(0, 0, 0);
+  transition: 0.75s;
+}
+
+.nav-link a:hover {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+header {
+  border-bottom: 3px solid rgb(15, 15, 15);
+}
+
+main {
+  color: aliceblue;
+  margin: 0 auto;
+  padding: 5px 20px 17px 20px;
+  border-radius: 10px;
+}
+
+.card {
+  min-height: 500.5px;
+  max-height: 520px;
+  background: rgb(200, 200, 200);
+  background-color: aliceblue;
+  transition: 0.3s;
+}
+
+.card:hover {
+  border: 3px solid rgba(200, 200, 200, 1);
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+div.meio {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 130px;
+  display: flex;
+  border: 3px solid rgb(12, 12, 17);
+  background: rgb(12, 12, 17);
+  background: linear-gradient(
+    90deg,
+    rgba(12, 12, 17, 1) 0%,
+    rgba(38, 38, 38, 1) 100%
+  );
+}
+
+div.meio img {
+  text-align: center;
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+div.meio p {
+  color: aliceblue;
+  padding: 15px;
+}
+
+section .meio {
+  padding: 25.5px;
+  justify-content: space-between;
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 35.5px;
+  border-bottom-right-radius: 500px;
+  border-top-right-radius: 500px;
+}
+
+.meio img {
+  margin-right: 10px;
+}
+
+.footer {
+  background-color: aliceblue;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 5px;
+}
+
+a.gerar {
+  text-align: right;
+  justify-content: right;
+  align-items: center;
+  padding-left: 300px;
+}
+
+div.prova {
+  text-align: right;
+  justify-content: right;
+  align-items: center;
+}
+
+div.botão a {
+  text-decoration: none;
+  font-style: none;
+  list-style: none;
+  color: rgb(0, 80, 0);
+}
+
+footer a {
+  font-style: none;
+  text-decoration: none;
+  list-style: none;
+  color: black;
+}
